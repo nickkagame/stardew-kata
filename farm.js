@@ -27,11 +27,7 @@ function cropWateringCalculatorImproved(
       (28 - rainyDayCount) * numOfCrops
     } sprinkles`);
 
-  let responseString = `There are ${rainyDayCount} days that you can skip watering your crops. You will need ${insert} of water.`;
-
-  
-
-  return responseString;
+  return `There are ${rainyDayCount} days that you can skip watering your crops. You will need ${insert} of water.`;
 }
 
 module.exports = { cropWateringCalculator, cropWateringCalculatorImproved };
